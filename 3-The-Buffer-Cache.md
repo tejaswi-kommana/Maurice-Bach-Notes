@@ -17,7 +17,7 @@ Data in a buffer corresponds to data in a logical disk block on a file system. A
 
 ![Buffer header](Diagrams/Screen_Shot_2017-06-07_at_10.27.45_PM.png)
 
-The *device number* fields specifies the logical file system (not physical device) and *block number* block number of the data on disk. These two numbers *uniquely* identify the buffer. The *status* field summarizes the current status of the buffer. The *ptr to data area* is a pointer to the data area, whose size must be at least as big as the size of a disk block.
+The *device number* fields specifies the logical file system (not physical device) and *block number* specifies the block number of the data on disk. These two numbers *uniquely* identify the buffer. The *status* field summarizes the current status of the buffer. The *ptr to data area* is a pointer to the data area, whose size must be at least as big as the size of a disk block.
 
 The status of a buffer is a combination of the following conditions:
 
